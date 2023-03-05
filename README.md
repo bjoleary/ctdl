@@ -11,7 +11,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/ctdl)](https://CRAN.R-project.org/package=ctdl)
 <!-- badges: end -->
 
-The goal of ctdl is to access [clinicaltrials.gov](clinicaltrials.gov)
+The goal of ctdl is to access [clinicaltrials.gov](https://www.clinicaltrials.gov)
 data from R.
 
 ## Installation
