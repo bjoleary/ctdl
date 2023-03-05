@@ -11,8 +11,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/ctdl)](https://CRAN.R-project.org/package=ctdl)
 <!-- badges: end -->
 
-The goal of ctdl is to access [clinicaltrials.gov](https://www.clinicaltrials.gov)
-data from R.
+The goal of ctdl is to access
+[clinicaltrials.gov](https://www.clinicaltrials.gov) data from R.
 
 ## Installation
 
@@ -32,8 +32,8 @@ library(ctdl)
 library(fs)
 download_directory <- fs::path_temp()
 download_data(filepath_data = download_directory)
-#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpm1pX9N directory...
-#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpm1pX9N to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpm1pX9N_archive_20230304190459/...
+#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmp9eNK7M directory...
+#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmp9eNK7M to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmp9eNK7M_archive_20230304191941/...
 #> Unzipping ...
 #> [1] "2023-03-02"
 ```
@@ -124,7 +124,8 @@ search_terms <-
     dplyr::mutate(regex_term = paste0("\\b", .data$term, "\\b"))
 ```
 
-We’ll also store some known false positives in a vector titled .
+We’ll also store some known false positives in a vector titled
+`known_fp`.
 
 ``` r
 known_fp <- 
@@ -150,7 +151,7 @@ known_fp <-
   )
 ```
 
-Now we’ll filter the tibble based on the search terms:
+Now we’ll filter the `studies` tibble based on the search terms:
 
 ``` r
 dh_studies <- 
