@@ -51,7 +51,7 @@ head(studies)
 
 Create some search terms and associate them with topics:
 
-```{r search-terms, echo=FALSE}
+```{r search-terms}
 search_terms <- 
   tibble::tribble(
     ~term, ~topic,
@@ -110,7 +110,7 @@ search_terms <-
 
 We'll also store some known false positives in a vector titled \code{known_fp}. 
 
-```{r known-fp, echo=FALSE}
+```{r known-fp}
 known_fp <- 
   c(
     "NCT03189251", "NCT04226612", "NCT00342394", "NCT00905346", "NCT00051363",
