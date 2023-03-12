@@ -32,10 +32,10 @@ library(ctdl)
 library(fs)
 download_directory <- fs::path_temp()
 download_data(filepath_data = download_directory)
-#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmp9eNK7M directory...
-#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmp9eNK7M to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmp9eNK7M_archive_20230304191941/...
+#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpcexCM1 directory...
+#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpcexCM1 to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpcexCM1_archive_20230312113419/...
 #> Unzipping ...
-#> [1] "2023-03-02"
+#> [1] NA
 ```
 
 Read in the study data:
@@ -50,12 +50,12 @@ head(studies)
 #> # A tibble: 6 × 69
 #>   nct_id      nlm_downl…¹ study_fi…² results_…³ disposit…⁴ last_upd…⁵ study_fi…⁶
 #>   <chr>       <chr>       <date>     <date>     <date>     <date>     <date>    
-#> 1 NCT02867735 <NA>        2016-08-09 NA         NA         2022-04-08 2016-08-12
-#> 2 NCT02801084 <NA>        2016-05-18 NA         NA         2022-04-09 2016-06-10
-#> 3 NCT04318470 <NA>        2020-03-10 NA         NA         2022-03-31 2020-03-19
-#> 4 NCT02790723 <NA>        2016-05-03 NA         NA         2022-04-14 2016-05-31
-#> 5 NCT02683824 <NA>        2016-01-21 NA         NA         2022-04-08 2016-02-10
-#> 6 NCT02602769 <NA>        2015-11-07 NA         NA         2022-04-08 2015-11-09
+#> 1 NCT04198025 <NA>        2019-11-19 NA         NA         2019-12-12 2019-12-12
+#> 2 NCT04245761 <NA>        2020-01-27 NA         NA         2021-09-02 2020-01-28
+#> 3 NCT04246034 <NA>        2020-01-18 NA         NA         2020-11-26 2020-01-28
+#> 4 NCT04245878 <NA>        2020-01-27 NA         NA         2021-03-25 2020-01-27
+#> 5 NCT04245813 <NA>        2019-12-17 NA         NA         2022-10-26 2020-01-26
+#> 6 NCT04245982 <NA>        2020-01-27 NA         NA         2020-01-29 2020-01-27
 #> # … with 62 more variables: study_first_posted_date <date>,
 #> #   study_first_posted_date_type <chr>, results_first_submitted_qc_date <date>,
 #> #   results_first_posted_date <date>, results_first_posted_date_type <chr>,
@@ -178,3 +178,10 @@ plot_studies(
 ```
 
 <img src="man/figures/README-plot-results-1.png" width="100%" />
+
+# Other info
+
+This is a hobby project and is built on my own time. It’s not from my
+employer and is not endorsed by my employer. For that matter, it’s not
+even endorsed by me. (Also, see the license for some important
+disclaimers.) It’s not intended for any medical or therapeutic use.

@@ -160,3 +160,11 @@ plot_studies(
   plot()
   
 ```
+
+# Other info
+
+This is a hobby project and is built on my own time. 
+It's not from my employer and is not endorsed by my employer. 
+For that matter, it’s not even endorsed by me. 
+(Also, see the license for some important disclaimers.) 
+It's not intended for any medical or therapeutic use.
