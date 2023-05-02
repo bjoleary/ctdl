@@ -32,10 +32,10 @@ library(ctdl)
 library(fs)
 download_directory <- fs::path_temp()
 download_data(filepath_data = download_directory)
-#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpcexCM1 directory...
-#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpcexCM1 to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpcexCM1_archive_20230312113419/...
+#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpqhklb4 directory...
+#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpqhklb4 to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpqhklb4_archive_20230502144048/...
 #> Unzipping ...
-#> [1] NA
+#> [1] "2023-05-02"
 ```
 
 Read in the study data:
@@ -48,21 +48,21 @@ studies <- read_studies(paste0(download_directory, "/"))
 #>   problems(dat)
 head(studies)
 #> # A tibble: 6 × 69
-#>   nct_id      nlm_downl…¹ study_fi…² results_…³ disposit…⁴ last_upd…⁵ study_fi…⁶
-#>   <chr>       <chr>       <date>     <date>     <date>     <date>     <date>    
-#> 1 NCT04198025 <NA>        2019-11-19 NA         NA         2019-12-12 2019-12-12
-#> 2 NCT04245761 <NA>        2020-01-27 NA         NA         2021-09-02 2020-01-28
-#> 3 NCT04246034 <NA>        2020-01-18 NA         NA         2020-11-26 2020-01-28
-#> 4 NCT04245878 <NA>        2020-01-27 NA         NA         2021-03-25 2020-01-27
-#> 5 NCT04245813 <NA>        2019-12-17 NA         NA         2022-10-26 2020-01-26
-#> 6 NCT04245982 <NA>        2020-01-27 NA         NA         2020-01-29 2020-01-27
-#> # … with 62 more variables: study_first_posted_date <date>,
-#> #   study_first_posted_date_type <chr>, results_first_submitted_qc_date <date>,
-#> #   results_first_posted_date <date>, results_first_posted_date_type <chr>,
-#> #   disposition_first_submitted_qc_date <date>,
-#> #   disposition_first_posted_date <date>,
-#> #   disposition_first_posted_date_type <chr>,
-#> #   last_update_submitted_qc_date <date>, last_update_posted_date <date>, …
+#>   nct_id    nlm_download_date_de…¹ study_first_submitte…² results_first_submit…³
+#>   <chr>     <chr>                  <date>                 <date>                
+#> 1 NCT03042… <NA>                   2017-01-30             NA                    
+#> 2 NCT01256… <NA>                   2010-12-07             NA                    
+#> 3 NCT03903… <NA>                   2019-03-31             NA                    
+#> 4 NCT05185… <NA>                   2021-12-20             NA                    
+#> 5 NCT01150… <NA>                   2010-06-24             NA                    
+#> 6 NCT05212… <NA>                   2021-12-17             NA                    
+#> # ℹ abbreviated names: ¹​nlm_download_date_description,
+#> #   ²​study_first_submitted_date, ³​results_first_submitted_date
+#> # ℹ 65 more variables: disposition_first_submitted_date <date>,
+#> #   last_update_submitted_date <date>, study_first_submitted_qc_date <date>,
+#> #   study_first_posted_date <date>, study_first_posted_date_type <chr>,
+#> #   results_first_submitted_qc_date <date>, results_first_posted_date <date>,
+#> #   results_first_posted_date_type <chr>, …
 ```
 
 Create some search terms and associate them with topics:
