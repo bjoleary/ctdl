@@ -62,7 +62,9 @@ find_studies <- function(data_studies, search_terms, known_fp = NULL,
     dplyr::distinct() |>
     # Join in the topics from the search topics table
     dplyr::left_join(
-      y = search_terms,
+      y =
+        search_terms |>
+        dplyr::mutate(regex_term = as.character(.data$regex_term)),
       by = c("term_found" = "regex_term")
     )
   # Limit the topics to the top X plus an "Other" topic
