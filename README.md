@@ -9,6 +9,9 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ctdl)](https://CRAN.R-project.org/package=ctdl)
+[![R-CMD-check](https://github.com/bjoleary/ctdl/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bjoleary/ctdl/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/bjoleary/ctdl/branch/main/graph/badge.svg)](https://app.codecov.io/gh/bjoleary/ctdl?branch=main)
 <!-- badges: end -->
 
 The goal of ctdl is to access
@@ -32,8 +35,8 @@ library(ctdl)
 library(fs)
 download_directory <- fs::path_temp()
 download_data(filepath_data = download_directory)
-#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpPEN1Uv directory...
-#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpPEN1Uv to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpPEN1Uv_archive_20230626121802.909944/...
+#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpjZLp1w directory...
+#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpjZLp1w to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpjZLp1w_archive_20230626122613.520003/...
 #> Unzipping ...
 #> [1] "2023-06-23"
 ```
