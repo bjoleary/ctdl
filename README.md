@@ -32,10 +32,10 @@ library(ctdl)
 library(fs)
 download_directory <- fs::path_temp()
 download_data(filepath_data = download_directory)
-#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpqhklb4 directory...
-#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpqhklb4 to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/Rtmpqhklb4_archive_20230502144048/...
+#> Checking for /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpPEN1Uv directory...
+#> Renaming /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpPEN1Uv to /var/folders/10/py32gfh16xjf_tx_6htqs6540000gn/T/RtmpPEN1Uv_archive_20230626121802.909944/...
 #> Unzipping ...
-#> [1] "2023-05-02"
+#> [1] "2023-06-23"
 ```
 
 Read in the study data:
@@ -50,12 +50,12 @@ head(studies)
 #> # A tibble: 6 × 69
 #>   nct_id    nlm_download_date_de…¹ study_first_submitte…² results_first_submit…³
 #>   <chr>     <chr>                  <date>                 <date>                
-#> 1 NCT03042… <NA>                   2017-01-30             NA                    
-#> 2 NCT01256… <NA>                   2010-12-07             NA                    
-#> 3 NCT03903… <NA>                   2019-03-31             NA                    
-#> 4 NCT05185… <NA>                   2021-12-20             NA                    
-#> 5 NCT01150… <NA>                   2010-06-24             NA                    
-#> 6 NCT05212… <NA>                   2021-12-17             NA                    
+#> 1 NCT02972… <NA>                   2016-11-07             NA                    
+#> 2 NCT00007… <NA>                   2000-12-29             NA                    
+#> 3 NCT03288… <NA>                   2017-09-18             NA                    
+#> 4 NCT00007… <NA>                   2000-12-29             NA                    
+#> 5 NCT00112… <NA>                   2005-06-02             NA                    
+#> 6 NCT00112… <NA>                   2005-06-02             NA                    
 #> # ℹ abbreviated names: ¹​nlm_download_date_description,
 #> #   ²​study_first_submitted_date, ³​results_first_submitted_date
 #> # ℹ 65 more variables: disposition_first_submitted_date <date>,
